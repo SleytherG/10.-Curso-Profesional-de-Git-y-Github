@@ -112,3 +112,7 @@ git show-branch --all //Muestra algo similar con mas datos
 gitk // Abrir en un software externo lo que hizo cada commit etc
 
 git push origin cabecera
+
+Clonar un proyecto de un repositorio remoto
+git clone "urlDelRepositorioRemoto"
+
