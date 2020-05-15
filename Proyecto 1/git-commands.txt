@@ -1,0 +1,114 @@
+Ubicado dentro de un folder, se inicia el directorio de Trabajo
+git init
+
+Ver el estado del folder
+git status
+
+Agregar un archivo al staging
+git add PrimerArchivo.txt
+
+Remover un archivo del staging y pase a unstage
+git rm PrimerArchivo.txt
+
+Removerlo completamente del staging
+git rm --cached PimerArchivo.txt
+
+Removerlo completamente del staging y del disco duro
+git rm --force PimerArchivo.txt
+
+Enviarlo a la rama master
+git commit -m "Primer commit del archivo"
+
+Ver la configuración de git
+git config
+git config --list
+git config --list --show-origin
+
+Agregar usuario y email
+git config --global user.name "SleytherG"
+git config --global user.email "sleythergcp@gmail.com"
+
+Ver cambios o historia de un archivo
+git log PrimerArchivo.txt
+
+Mostrar más informacion de las modificaciones del archivo
+git show PrimerArchivo.txt
+
+Devolver un archivo a un punto en la historia
+Ojo: Tener mucho cuidado porque este comando borra todos los cambios adicionales que se hicieron
+git reset -alfanumerico commit id- --hard or --soft
+
+Permite visualizar los bits por commit que se agregaron o reducieron
+git log --stat
+
+Permite visualizar un archivo con la información de ese momento, se debe tener cuidado de no hacer commit en ese momento,
+porque se perderia la información
+git checkout -alfanumerico commit id- PrimerArchivo.txt
+
+Si quiero volver al archivo de la rama master o cualquier otra rama
+git checkout master PrimerArchivo.txt
+
+Para enviar todo el repositorio en local al repositorio remoto
+git push
+
+Para traer los archivos del repositorio remoto alrepositorio local pero no me lo copia en mis archivos
+git fetch
+
+Para que los archivos del repositorio remoto al repositorio local se modifiquen mis archivos
+git merge
+
+Para copiar el repositorio remoto al repositorio local y modifique mis archivos de una forma abreviada.
+git pull
+
+Para poder crear otra rama a parte de la master 
+git branch NombreDeRama
+
+Para poder moverte de una rama a otra
+git checkout NombreDeRama
+
+ Para saber que ramas creaste y en la que actualmente estas
+ git branch
+ 
+ Para traerte los cambios de la rama master a un rama que se fusiono anteriormente o se dejo olvidada
+ git merge NombreDeRamaAntigua
+
+ Agregar un origen remoto de nuestro repositorio local al repositorio remoto de Github
+git remote add origin AquiVaLaRutaDelRepositorioRemotoDeGitHub
+ 
+ Traerte el repositorio remoto al local
+ git pull origin master
+ git pull origin master --allow-unrelated-histories
+
+ Crear una llave SSH
+ ssh-keygen -t rsa -b 4096 -C "sleythergcp@gmail.com"
+
+ Para concectarnos a un servidor remoto
+ eval $(ssh-agent -s) => Agent pid 610
+
+ Agregar la llave publica al sistema
+ ssh-add ~/.ssh/id_rsa => Identity added: /c/Users/sl_gu/.ssh/id_rsa (sleythergcp@gmail.com)
+ 
+ Cambiar la url de remote
+ git remote set-url origin git@github.com:SleytherG/hyperblog.git
+
+ Ver  todos los commits hechos
+ git log --all
+
+ Ver los commits con graficos
+ git log --all --graph
+ git log --all --decorate --oneline
+ alias arbolito = "git log --all --graph --decorate --oneline"
+
+ Tags
+ git tag
+ git tag -a v0.1 -m "Resultado de las primeras clases del curso" dce181a
+ git show-ref --tags
+ git push origin --tags
+ git tag -d NombreDelTagAEliminar
+ git push origin :refs/tags/NombreDelTagEliminado
+
+git show-branch //Muestra que ramas existen y cual a sido su historia
+git show-branch --all //Muestra algo similar con mas datos
+gitk // Abrir en un software externo lo que hizo cada commit etc
+
+git push origin cabecera
