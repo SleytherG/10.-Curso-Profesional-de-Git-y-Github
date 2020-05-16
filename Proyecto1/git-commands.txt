@@ -129,3 +129,11 @@ Guardar cambios en memoria y recuperarlos despues
 git stash
 git stash pop
 git stash branch english-version
+git stash drop
+
+Limpiar tu proyecto de archivos no deseados
+git clean --dry-run
+git clean -f
+
+Traer commits viejos al head de un branch
+git cherry-pick c161e0f
