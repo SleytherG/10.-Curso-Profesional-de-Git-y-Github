@@ -125,4 +125,7 @@ git pull upstream master
 git status
 git push origin master
 
-
+Guardar cambios en memoria y recuperarlos despues
+git stash
+git stash pop
+git stash branch english-version
