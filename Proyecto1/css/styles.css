@@ -3,8 +3,8 @@ body {
     text-align: center;
     font-family: 'Operator Mono Light';
     color: darkred;
-    display: flex;
-    max-width: 500px;
+    /* display: flex; */
+    /* width: 1000px; */
     margin: 0;
     padding: 0;
     
@@ -18,6 +18,7 @@ h1 {
     text-align: left;
     border: 1px solid #DDD;
     margin: 0 auto;
+    width: 60%;
 }
 .container {
     font-size: 20px;
@@ -44,9 +45,9 @@ h1 {
     padding: 1em;
 }
 .footer {
-        background: #777;
-        color:white;
-        text-align:center;
+    background: #777;
+    color:white;
+    text-align:center;
 	padding: .5em;
 }
 
