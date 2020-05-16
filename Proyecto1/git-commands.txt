@@ -153,3 +153,15 @@ git grep -c Platzi
 git grep -c "<p>"
 
 git log -s "cabecera" // log para los commits y grep para los archivos
+
+Comandos y recursos colaborativos en Git y Github
+git shortlog
+git shortlog -sn
+git shortlog -sn --all
+git shortlog -sn --all --no-merges
+git config --global alias.stats "shortlog -sn --all --no-merges"
+git blame blogpost.html
+git blame -c blogpost.html
+git blame css/styles.css -L35,53
+
+git branch -r
