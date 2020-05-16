@@ -19,6 +19,9 @@ h1 {
     border: 1px solid #DDD;
     margin: 0 auto;
     width: 60%;
+    background-image: url('/imagenes/nature.jpeg');
+    
+    
 }
 .container {
     font-size: 20px;
@@ -43,6 +46,7 @@ h1 {
 .post {
     background-color: white;
     padding: 1em;
+    
 }
 .footer {
     background: #777;
