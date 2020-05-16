@@ -116,3 +116,13 @@ git push origin cabecera
 Clonar un proyecto de un repositorio remoto
 git clone "urlDelRepositorioRemoto"
 
+Traerse un repositorio para contribuir
+git remote -v
+git remote add upstream git@github.com:SleytherG/10.-Curso-Profesional-de-Git-y-Github.git
+git remote
+git remote -v
+git pull upstream master
+git status
+git push origin master
+
+
