@@ -137,3 +137,6 @@ git clean -f
 
 Traer commits viejos al head de un branch
 git cherry-pick c161e0f
+
+Reconstruir commits en Git con amend
+git commit --amend // Commitea algo que se nos olvido al ultimo commid hecho
